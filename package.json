@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/scott-mccartney/phc-nhl-api.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "keywords": [
     "pro",
     "hockey",
