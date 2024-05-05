@@ -1,10 +1,16 @@
 {
-  "name": "@phc/nhl-api",
+  "name": "phc-nhl-api",
   "version": "0.0.1",
   "description": "Utility methods and models to call the NHL API",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "test"
+    "build": "tsup",
+    "test": "echo \"Error: No test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,5 +25,10 @@
     "api"
   ],
   "author": "scott-mccartney",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
 }
