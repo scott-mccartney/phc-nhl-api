@@ -34,7 +34,15 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Publish to npm
+      # - name: Increment version
+      #   run: npm version minor
+      - name: Publish to NPM
+        uses: js-actions/npm@master
+        with:
+          args: publish dist/
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: npm publish phc-nhl-api --access public
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Publish to npm
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      #   run: npm publish phc-nhl-api --access public

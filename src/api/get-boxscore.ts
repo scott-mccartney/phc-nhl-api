@@ -4,7 +4,7 @@ import { baseUrl } from './api.config';
 /**
  * Retrieve the Boxscore details, including the game metadata, venue & broadcast info, and player statistics.
  * @param gameId the game ID in the format '2023020001'
- * @returns the {@type Boxscore} with statistics
+ * @returns the Boxscore with statistics and game metadata
  */
 export const getBoxscore = async (
   gameId: number | string
