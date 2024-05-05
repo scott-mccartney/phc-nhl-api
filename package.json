@@ -1,6 +1,6 @@
 {
   "name": "phc-nhl-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Utility methods and models to call the NHL API",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
