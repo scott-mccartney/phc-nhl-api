@@ -1,1 +1,3 @@
-export * from './get-boxscore';
+export * from './game';
+export * from './team';
+

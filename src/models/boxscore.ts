@@ -1,15 +1,13 @@
+import { DisplayValue } from "./shared";
+
 export type Boxscore = {
   id: number;
   season: number;
   gameType: number;
   limitedScoring: boolean;
   gameDate: string;
-  venue: {
-    default: string;
-  };
-  venueLocation: {
-    default: string;
-  };
+  venue: DisplayValue;
+  venueLocation: DisplayValue;
   startTimeUTC: string;
   easternUTCOffset: string;
   venueUTCOffset: string;
@@ -29,9 +27,7 @@ export type Boxscore = {
   regPeriods: number;
   awayTeam: {
     id: number;
-    name: {
-      default: string;
-    };
+    name: DisplayValue;
     abbrev: string;
     score: number;
     sog: number;
@@ -42,9 +38,7 @@ export type Boxscore = {
   };
   homeTeam: {
     id: number;
-    name: {
-      default: string;
-    };
+    name: DisplayValue;
     abbrev: string;
     score: number;
     sog: number;
@@ -64,9 +58,7 @@ export type Boxscore = {
       forwards: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         goals: number;
         assists: number;
@@ -82,9 +74,7 @@ export type Boxscore = {
       defense: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         goals: number;
         assists: number;
@@ -100,9 +90,7 @@ export type Boxscore = {
       goalies: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         evenStrengthShotsAgainst: string;
         powerPlayShotsAgainst: string;
@@ -123,9 +111,7 @@ export type Boxscore = {
       forwards: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         goals: number;
         assists: number;
@@ -141,9 +127,7 @@ export type Boxscore = {
       defense: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         goals: number;
         assists: number;
@@ -159,9 +143,7 @@ export type Boxscore = {
       goalies: {
         playerId: number;
         sweaterNumber: number;
-        name: {
-          default: string;
-        };
+        name: DisplayValue;
         position: string;
         evenStrengthShotsAgainst: string;
         powerPlayShotsAgainst: string;
